@@ -1,0 +1,69 @@
+/* styles
+ font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+.nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    top: 0;
+    position: sticky;
+    align-items: center;
+    z-index: 9999;
+    transition: all .3s ease;
+    /*background-color: #008bb2;
+    background-image: linear-gradient(to left, #008ab0, hsl(196,100%,15%));*/
+    /*background-image: linear-gradient(to left, #008ab0, #006280);*/
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.selected{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.logo{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+}
+.navitems{
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+}
+.Socialiconscon{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+}
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.listitem{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+.listitem:hover{
+    color: hsl(43, 74%, 60%);
+}
+.logotext{
+    margin-left: 5px;
+}
+.logotext > h1{
+    color: white;
+}

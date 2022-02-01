@@ -1,0 +1,49 @@
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.firstcard{
+    flex-basis: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.text{
+    flex-basis: 10%;
+}
+.header{
+    flex-basis: 40%;
+}
+.pservices{
+    color: white;
+    z-index: 999;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.servicescon{
+    background-color: black;
+    height: 510px;
+    border: 1px solid white;
+}
+.fillimg{
+    position: absolute;
+    filter: blur(2px) grayscale(40%) opacity(0.8) contrast(130%);
+}
+.secondcard{
+    flex-basis: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.thirdcard{
+    flex-basis: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}

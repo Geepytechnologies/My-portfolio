@@ -1,0 +1,53 @@
+.About{
+    height: 70vh;
+    display: flex;
+    background-image: url("../../light_background.jpg");
+    /*background-color: hsl(0,0%,90%);*/
+    flex-direction: column;
+}
+.left-right{
+    display: flex;
+    flex-direction: row;
+}
+.deskman{
+    position: absolute;
+    filter: grayscale(100%) opacity(0.05);
+    top: 150px;
+    left: -150px;
+}
+.buttoncon{
+    margin-top: 15px;
+    margin-right: 8px;
+}
+.button:hover{
+    transform: scale(2);
+}
+.button{
+    background-color: transparent;
+    color: goldenrod;
+    padding: 10px;
+    outline: none;
+    font-size: 1rem;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+}
+.left{
+    flex-basis: 50%;
+}
+.right{
+    flex-basis: 50%;
+}
+.rightimgcontain{
+    display: flex;
+    justify-content: center;
+}
+.imgcon:hover{
+    transform: scale(1.08,1.08);
+}
+.leftcontain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
