@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import pic from './gpsvg.png'
 import deskman from "../../deskman.webp"
 import DownloadIcon from '@mui/icons-material/Download';
 import "./About.css"
@@ -50,8 +49,8 @@ export default function About() {
                     <h4 className='montserrat'>CONTENT CREATOR</h4>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'row',justifyContent:'flex-start',height:'50px', alignItems: 'center',width: '100%'}}>
-                  <div className='button montserrat'>Hire Me</div>
-                  <div className='button2 montserrat'>Get CV<span><DownloadIcon style={{marginLeft: '5px'}}/></span></div>
+                  <div className='button montserrat'><a href="#contact" style={{display:'flex',justifyContent:'center',alignItems:'center'}}>Hire Me</a></div>
+                  <div className='button2 montserrat'><a href="" style={{display:'flex',justifyContent:'center',alignItems:'center'}} download="geepy's CV">Get CV<span><DownloadIcon style={{marginLeft: '5px'}}/></span></a></div>
                 </div>
             </div>
         </div>

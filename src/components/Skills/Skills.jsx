@@ -1,23 +1,17 @@
 import './Skills.css'
-import laptop from "../../laptop.webp"
-import code from "../../code.webp"
-import office from "../../office.jpg"
-import deskman from "../../deskman.webp"
-import {useWindowScrollPositions} from "../../Scrollposition";
-import { useEffect, useState ,useRef} from 'react'
+
+import { useRef} from 'react'
 
 export default function Skills() {
    const el = useRef(null);
    const el2 = useRef(null);
-   const { scrollY } = useWindowScrollPositions();
   return (
-      <div className='container'>
+      <div className='container' id='skills'>
          <div className='aboutme'>
                 <div className='about-text'>
                     <p><h2 className='montserrat' style={{padding: 5}}>About me</h2></p>
                     <p style={{fontSize: '16px'}} className='poppins'>I design and develop services for customers, specializing in creating stylish, <br></br>modern websites, web applications, Mobile applications.</p>
-                    {/*<img src={laptop} alt='check' height="auto" width="600px" className='laptop'/>*/}
-                    <div className='laptop'></div>
+                    <div  className='laptop'></div>
                 </div>
          </div>
          <div className='skills' >

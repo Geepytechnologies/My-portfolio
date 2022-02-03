@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import "../../styles.css"
 import "../Header/Header.css"
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -8,21 +6,16 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from "../Header/logo.png"
-import {useWindowScrollPositions} from "../../Scrollposition";
+//import {useWindowScrollPositions} from "../../Scrollposition";
 
 const Header = () => {
-   const user = true;
-   const { scrollX, scrollY } = useWindowScrollPositions();
-   const navStyle = {
-     background: 'transparent',
-     transition: 'all .8s ease'
-   }
+  // const { scrollX, scrollY } = useWindowScrollPositions();
    const navStyle2 = {
     backgroundImage: 'linear-gradient(to left, #008ab0, #006280)',
     boxShadow: '0px 3px 4px 2px #999999'
   }
   return (
-      <div className='nav' style={navStyle2}>
+      <div className='nav' style={navStyle2} id='#header'>
           <div className='logo'>
               <div className='logocontainer'>
                 <img src={logo} alt="logo" width="100px" height="auto" className='logoimg' />
@@ -33,13 +26,13 @@ const Header = () => {
           </div>
           <div className='navitems'>
                 <ul className='list'>
-                    <li className='selected'>
+                    <a href="#about"><li className='listitem'>
                         Home
-                    </li>
-                    <li className='listitem'>About</li>
-                    <li className='listitem'>Services</li>
+                    </li></a>
+                    <a href='#skills'><li className='listitem'>About</li></a>
+                    <a href="#services"><li className='listitem'>Services</li></a>
                     <li className='listitem'>Works</li>
-                    <li className='listitem'>Contact</li>
+                    <a href="#contact"><li className='listitem'>Contact</li></a>
                 </ul>
           </div>
           <div className='menu'>
