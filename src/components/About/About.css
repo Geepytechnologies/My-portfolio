@@ -1,45 +1,78 @@
 .About{
-    height: 70vh;
     display: flex;
     background-image: url("../../light_background.jpg");
     /*background-color: hsl(0,0%,90%);*/
     flex-direction: column;
+    justify-content: space-around;
 }
-.left-right{
+.typed-cursor{
+    font-size: 80px;
+}
+.job{
+    margin-bottom: 10px;
+}
+.job > h4{
+    line-height: 30px;
+}
+.hey{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+}
+.hey > h3{
+    width: 30%;
 }
 .deskman{
     position: absolute;
     filter: grayscale(100%) opacity(0.05);
     top: 150px;
-    left: -150px;
+    left: 20px;
 }
 .buttoncon{
     margin-top: 15px;
     margin-right: 8px;
 }
+.button2:hover{
+   transform: scale(1.1);
+}
 .button:hover{
-    transform: scale(2);
+   transform: scale(1.1);
 }
 .button{
-    background-color: transparent;
-    color: goldenrod;
-    padding: 10px;
-    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #006280;
+    color: white;
+    height: 40px;
     font-size: 1rem;
-    border: 2px solid goldenrod;
-    border-radius: 20px;
+    padding: 25px 30px;
+    cursor: pointer;
+    box-shadow: 0px -2px 4px 1px #999999;
+    box-shadow: -2px 0px 4px 1px #999999;
+    border-radius: 10px;
+    z-index: 999;
+}
+.button2{
+    display: flex;
+    height: 40px;
+    padding: 25px 30px;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: goldenrod;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0px -2px 4px 1px #999999;
+    box-shadow: -2px 0px 4px 1px #999999;
+    border-radius: 10px;
+    z-index: 999;
+
 }
 .left{
-    flex-basis: 50%;
-}
-.right{
-    flex-basis: 50%;
-}
-.rightimgcontain{
-    display: flex;
-    justify-content: center;
+    flex-basis: 100%;
 }
 .imgcon:hover{
     transform: scale(1.08,1.08);
@@ -48,6 +81,38 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%
+    align-items: flex-start;
+    padding-left: 35px;
+    margin-top: 40px;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 680px){
+    .About{
+        background-position-y: -5%;
+        background-position-x: 10%;
+    }
+}
+@media screen and (max-width: 390px){
+    .About{
+        background-position-y: 5%;
+        background-position-x: 30%;
+    }
+    .leftcontain{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .iam{
+        font-size: 40px!important;
+    }
+    .job > h4{
+        font-size: 15px;
+    }
+    .hey{
+        width: 70%;
+    }
+    .hey > h3{
+        line-height: 30px;
+    }
 }

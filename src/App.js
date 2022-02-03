@@ -3,6 +3,7 @@ import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Services from './components/services/Services';
 import Foot from './components/Foot/Foot';
+import Contact from './components/Contact/Contact';
 
 import {
     BrowserRouter as Router,
@@ -17,6 +18,7 @@ const App = () => {
         <About />
         <Skills />
         <Services />
+        <Contact />
         <Foot />
       </>
   )

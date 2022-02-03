@@ -9,9 +9,6 @@ import CopyrightIcon from '@mui/icons-material/Copyright';
 export default function Foot() {
   return (
       <div className="foot">
-        <div className="box">
-          <div className="box2"></div>
-        </div>
         <img src={logo} alt="logo" height="auto" width="500px" className="logofade"/>
         <img src={logo} alt="logo" height="auto" width="500px" className="logofade2"/>
         <div className="logosection">

@@ -6,6 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MenuIcon from '@mui/icons-material/Menu';
 import logo from "../Header/logo.png"
 import {useWindowScrollPositions} from "../../Scrollposition";
 
@@ -21,10 +22,10 @@ const Header = () => {
     boxShadow: '0px 3px 4px 2px #999999'
   }
   return (
-      <div className='nav' style={scrollY < 5 ? navStyle : navStyle2}>
+      <div className='nav' style={navStyle2}>
           <div className='logo'>
               <div className='logocontainer'>
-                <img src={logo} alt="logo" width="100px" height="auto" />
+                <img src={logo} alt="logo" width="100px" height="auto" className='logoimg' />
               </div>
               <div className='logotext'>
                 <h1 className='opensans'>Geepy</h1>
@@ -40,6 +41,9 @@ const Header = () => {
                     <li className='listitem'>Works</li>
                     <li className='listitem'>Contact</li>
                 </ul>
+          </div>
+          <div className='menu'>
+            <MenuIcon style={{fill: 'white',fontSize: '30px'}}/>
           </div>
           <div className='Socialiconscon'>
               <div className="Socialicons">
