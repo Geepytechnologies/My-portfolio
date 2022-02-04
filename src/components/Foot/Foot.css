@@ -69,3 +69,20 @@
     align-items: center;
     margin: 0px 5px
 }
+
+@media screen and (max-width: 627px){
+    .logofade2{
+        width: 200px;
+    }
+    .logofade{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 330px){
+    .logofade2{
+        display: none;
+    }
+    .logofade{
+        display: none;
+    }
+}

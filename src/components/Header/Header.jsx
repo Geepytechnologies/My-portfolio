@@ -40,10 +40,10 @@ const Header = () => {
           </div>
           <div className='Socialiconscon'>
               <div className="Socialicons">
-                <FacebookIcon style={{fill: 'white'}}/>
-                <TwitterIcon style={{fill: 'white'}}/>
-                <InstagramIcon style={{fill: 'white'}}/>
-                <LinkedInIcon style={{fill: 'white'}}/>
+                <a href="https://web.facebook.com/profile.php?id=100004919441615"><FacebookIcon style={{fill: 'white'}}/></a>
+                <a href="https://twitter.com/BBSTAR90"><TwitterIcon style={{fill: 'white'}}/></a>
+                <a href="https://www.instagram.com/geepy_cypher/"><InstagramIcon style={{fill: 'white'}}/></a>
+                <a href="https://www.linkedin.com/in/godspower-enwereuzor-4861571a2/"><LinkedInIcon style={{fill: 'white'}}/></a>
               </div>
           </div>
       </div>

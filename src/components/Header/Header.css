@@ -101,18 +101,15 @@ ul{
         width: 80px;
     }
     .nav{
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .navitems{
         display: none;
     }
-    .menu{
-     padding-right: 10px;
-     flex-basis: 60%;
-     display: block; 
-     display: flex;
-     justify-content: flex-end;
+    .Socialiconscon{
+        display: flex;
     }
+    
 }
 @media screen and (max-width: 500px) {
     .menu{
@@ -121,5 +118,10 @@ ul{
     }
     .logoimg{
         width: 70px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .Socialiconscon{
+        display: none;
     }
 }

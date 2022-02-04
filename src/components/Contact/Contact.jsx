@@ -5,6 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Form from './Form';
 
 function Contact() {
     useEffect(() => {
@@ -21,15 +22,7 @@ function Contact() {
               <div className='icons'><EmailIcon style={{fill:'#f52225'}}/><span className='poppins info'>geepytechnologies@gmail.com</span></div>
               <div className='icons'><FmdGoodIcon style={{fill:'#f52225'}}/><span className='poppins info'>Lagos, Nigeria</span></div>
           </div>
-          <div data-aos="fade-left" className='form'>
-              <p className='poppins formheader'>I'm always open to discussing product design work or partnerships.</p>
-              <form className='forms'>
-                  <input type="text" placeholder='Name *' className='nameinput1 dmsans'></input>
-                  <input type="email" placeholder='Email *' className='nameinput2 dmsans'></input>
-                  <input type="text" placeholder='Message *' className='nameinput3 dmsans'></input>
-                  <div className='submit dmsans'>Submit</div>
-              </form>
-          </div>
+          <Form />
       </div>
   )
 }
