@@ -9,13 +9,13 @@ export default function Skills() {
       <div className='container' id='skills'>
          <div className='aboutme'>
                 <div className='about-text'>
-                    <p><h2 className='montserrat' style={{padding: 5}}>About me</h2></p>
+                    <h2 className='montserrat' style={{padding: 5}}>About me</h2>
                     <p style={{fontSize: '16px'}} className='poppins'>I design and develop services for customers, specializing in creating stylish, <br></br>modern websites, web applications, Mobile applications.</p>
                     <div  className='laptop'></div>
                 </div>
          </div>
          <div className='skills' >
-                <p><h2 className='poppins'>Skills</h2></p>
+                <h2 className='poppins'>Skills</h2>
                 <div className='skillcontainer'>
                     <div className='htmlcon'>
                         <div className='textcon'>

@@ -1,3 +1,4 @@
 module.exports = {
-    db: 'mongodb://localhost:27017/portfolio'
+    db: process.env.DATABASE_URL
+    // db: 'mongodb+srv://geepy:Richgift196897@cluster0.gzral.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 };

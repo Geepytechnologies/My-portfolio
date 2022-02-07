@@ -13,6 +13,7 @@ let formSchema = new Schema({
   }
 }, {
     collection: 'forminfo'
-  })
+  }
+)
 
 module.exports = mongoose.model('form', formSchema)

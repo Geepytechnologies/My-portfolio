@@ -45,7 +45,13 @@
     font-weight: 500;
     line-height: 30px;
 }
-
+.whatsappcon{
+    display: flex;
+    align-items: center;
+}
+.whatsapp:hover{
+     transform: scale(1.08);
+}
 
 @media screen and (max-width: 980px){
     .discuss{
