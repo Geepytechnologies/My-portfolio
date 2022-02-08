@@ -5,7 +5,7 @@ const router = express.Router()
 let formSchema = require('../models/form');
 
 
-router.post('/', (req, res) => {
+router.post('/request', (req, res) => {
     formSchema.create(req.body, (error, data) => {
       if (error) {
         //return next(error)

@@ -45,7 +45,7 @@ export default class Form extends Component {
             message: this.state.message
           };
          try{
-            await axios.post('http://localhost:4000', formObject)
+            await axios.post('http://localhost:4000/request', formObject)
             .then(styles.style.background = '#7ac142', this.wrapper.current.style.display = "flex",
             this.setState({submit: 'sent'}))
          }catch(err){
